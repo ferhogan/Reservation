@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "ea92d777-27f8-4a95-88b3-1cf702a3f935",
+		"name": "Reservation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddReservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerName\": \"John Doe\",\r\n    \"tableSize\": 4,\r\n    \"date\": \"2024-03-15\",\r\n    \"time\": \"18:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50378/reservations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50378",
+					"path": [
+						"reservations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getReservations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50378/reservations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50378",
+					"path": [
+						"reservations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
